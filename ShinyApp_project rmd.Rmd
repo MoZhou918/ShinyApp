@@ -18,6 +18,7 @@ library(shinythemes)
 library(rsconnect)
 AirFrance <- read.csv(url("https://raw.githubusercontent.com/MoZhou918/ShinyApp/master/AirFrance_forR.csv"), header=TRUE,sep=",")
 
+
 # Define UI for application that plots features of movies
 ui <- fluidPage(
 
