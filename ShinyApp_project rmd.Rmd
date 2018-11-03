@@ -164,21 +164,7 @@ server <- function(input, output, session) {
       labs(title = new_plot_title())
   })
   
-  # x and y as reactive expressions
-  x <- reactive({ toTitleCase(str_replace_all(input$x, "_", " ")) })
-  y <- reactive({ toTitleCase(str_replace_all(input$y, "_", " ")) })
-  
-  # Create description of plot
-  output$description <- renderText({
-    paste("The plot above shows the relationship between",
-          x(),
-          "and",
-          y(),
-          "for",
-          nrow(AirFrance)
-          )
-  })
-  
+
    # Create regression output
   output$lmoutput <- renderPrint({
     x <- AirFrance %>% pull(input$x)
