@@ -5,6 +5,7 @@ date: "11/3/2018"
 output: html_document
 ---
 
+
 ```{r}
 # Shiny App project
 # This App contains:outputs(plot,summary data table, text, html), inputs(action button, check box, sidebar input, text input), reactive # expressions, 2 tabs, and several tags(html, image).
